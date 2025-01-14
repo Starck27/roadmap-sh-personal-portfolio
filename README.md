@@ -10,5 +10,8 @@ This is an update from HTML Website page (https://github.com/starck27/roadmap-sh
 - [LinkedIn](https://linkedin.com/in/adinataekwan)
 - [GitHub](https://github.com/starck27)
 
+## Pages Link
+https://starck27.github.io/roadmap-sh-personal-portfolio/
+
 ## Roadmap Project Link
 https://roadmap.sh/projects/portfolio-website
