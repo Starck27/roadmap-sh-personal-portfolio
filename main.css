@@ -19,7 +19,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: wheat;
+  background-color: wheat;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
 }
@@ -69,14 +69,6 @@ nav ul li:last-child:after {
   content: "";
 }
 
-nav ul li:hover {
-  font-size: 1.1rem;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
 main {
   margin-top: 3.5rem;
   flex: 1;
@@ -100,11 +92,6 @@ section {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 0px;
-}
-
-.box {
-  border: 1px solid black;
-  border-top: double black;
 }
 
 .box h2 {
@@ -167,9 +154,172 @@ section {
   color: red;
 }
 
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+fieldset {
+  padding: 1rem;
+  margin: 0 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+legend {
+  text-align: center;
+  padding: 0 1.5rem;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 5%;
+  text-transform: uppercase;
+}
+
+table {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+input {
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+textarea {
+  padding: 2rem 0;
+}
+
+button {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10%;
+  transition: 0.1s ease-out;
+  max-width: 20%;
+  align-self: center;
+}
+
+button:hover {
+  background-color: wheat;
+}
+
 footer {
   margin-top: 1rem;
   padding: 1rem;
   text-align: center;
   font-weight: bold;
+}
+
+@media (width < 600px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+
+  nav .logo a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav .logo a img {
+    width: 25%;
+  }
+
+  main {
+    margin-top: 7.5rem;
+    flex: 1;
+  }
+
+  .title {
+    padding: 1rem;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    margin-top: 1rem;
+  }
+
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .box:first-child {
+    border-top: double black;
+  }
+
+  .box {
+    margin-top: 0;
+  }
+
+  .box li {
+    background-color: darkgray;
+  }
+
+  #work-experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #work-experience ul,
+  #education p,
+  #education li {
+    text-align: left;
+  }
+
+  #education li {
+    background-color: transparent;
+  }
+
+  #education ul {
+    margin-bottom: 1rem;
+  }
+
+  .review-box-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem;
+  }
+
+  .review-box {
+    margin: 1rem 0;
+    width: 100%;
+  }
+}
+
+@media (width >= 600px) {
+  nav ul li:hover {
+    font-size: 1.1rem;
+  }
+
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .box {
+    border: 1px solid black;
+    border-top: double black;
+  }
 }
