@@ -17,6 +17,7 @@ nav {
   width: 100%;
   background: wheat;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
 }
 
 nav a {
@@ -70,4 +71,68 @@ nav ul li:hover {
 
 nav ul li a:hover {
   text-decoration: underline;
+}
+
+main {
+  margin-top: 3.5rem;
+}
+
+section {
+  margin-top: 1.5rem;
+}
+
+.title {
+  text-align: center;
+  padding: 5rem;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 0px;
+}
+
+.box {
+  border: 1px solid black;
+  border-top: double black;
+}
+
+.box h2 {
+  margin: 1.2rem;
+}
+
+.box li {
+  list-style-type: none;
+  border-bottom: 1px solid black;
+  padding: 1rem 2rem;
+}
+
+.box li:last-child {
+  border: none;
+}
+
+#work-experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#work-experience p {
+  margin: 1rem 0;
+}
+
+#education p {
+  padding: 0 1rem;
+}
+
+#education li {
+  margin: 0 2rem;
+  padding: 0;
+  list-style-type: disc;
+  border: none;
 }
