@@ -8,6 +8,8 @@
 
 body {
   font-family: "Outfit", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -77,6 +79,7 @@ nav ul li a:hover {
 
 main {
   margin-top: 3.5rem;
+  flex: 1;
 }
 
 section {
@@ -141,18 +144,21 @@ section {
 
 #review h2 {
   margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .review-box-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .review-box {
   border: solid 1px black;
   border-radius: 2rem;
-  padding: 1rem;
-  margin: 1rem 5rem;
+  padding: 1.5rem;
+  width: 25%;
+  margin: 1rem 3rem;
 }
 
 .review-box span {
@@ -163,7 +169,7 @@ section {
 
 footer {
   margin-top: 1rem;
-  text-align: center;
   padding: 1rem;
+  text-align: center;
   font-weight: bold;
 }
