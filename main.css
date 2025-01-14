@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 nav {
@@ -157,4 +159,11 @@ section {
   display: block;
   margin-top: 1rem;
   color: red;
+}
+
+footer {
+  margin-top: 1rem;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
 }
